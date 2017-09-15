@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>kCellSubviewSizeHeight</key>
+	<integer>44</integer>
+	<key>kCellSubviewSizeWidth</key>
+	<integer>44</integer>
+	<key>kCellOriginPositionY</key>
+	<integer>0</integer>
+	<key>kCellOriginPositionX</key>
+	<integer>0</integer>
+	<key>kSearchTypeNumberSpecial</key>
+	<integer>20</integer>
+	<key>kSearchTypeNumberArea</key>
+	<integer>10</integer>
+	<key>kStoreOpenFlag</key>
+	<string>&amp;open=now</string>
+	<key>kDetaiCouponFlag</key>
+	<string>&amp;ktai_coupon=0</string>
+	<key>kSpecialTypeBaseURL</key>
+	<string>http://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=c99d2590d2106595&amp;special=%@&amp;count=%d</string>
+	<key>kAreaTypeBaseURL</key>
+	<string>http://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=c99d2590d2106595&amp;large_area=%@&amp;count=%d</string>
+	<key>kSpecialSearchBaseURL</key>
+	<string>http://webservice.recruit.co.jp/hotpepper/special/v1/?key=c99d2590d2106595&amp;count=%d</string>
+	<key>kAreaSearchBaseURL</key>
+	<string>http://webservice.recruit.co.jp/hotpepper/large_area/v1/?key=c99d2590d2106595</string>
+</dict>
+</plist>

@@ -1,0 +1,9 @@
+--------------------------------------------------------------------------------
+本ソフトウェアは、以下のライブラリを使用しています。
+
+ライブラリ名：
+GTMStackTrace
+
+* GTMStackTraceの各種GTMから始まるprefixを一律SDSGTMに変更しました。
+　（例：GTMStackTrace.h -> SDSGTMStackTracd.h, GTMStackTraceFromAddressDescriptors() -> SDSGTMStackTraceFromAddressDescriptors() ...etc）
+--------------------------------------------------------------------------------

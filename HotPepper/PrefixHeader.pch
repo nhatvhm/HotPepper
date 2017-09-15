@@ -1,0 +1,43 @@
+//
+//  PrefixHeader.pch
+//  HotPepper
+//
+//
+
+#ifndef Prefix_Header
+#define Prefix_Header
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#endif
+
+//
+#if defined(__OPTIMIZE__)
+#define __NDEBUG__ 1
+#else
+#define __DEBUG__ 1
+#endif
+
+#if ! defined(__DEBUG__) && ! defined(__NDEBUG__)
+#warning Neither of __DEBUG__/__NDEBUG__ macros are #defined
+#endif
+
+#ifdef __DEBUG__
+#define HHDebugPrint(s, ...) NSLog(s, ##__VA_ARGS__)
+#define HHMethodName NSLog(@"%s(line:%d)", __func__, __LINE__)
+#else
+#define HHDebugPrint(s, ...)
+#define HHMethodName
+#endif
+
+#endif /* Prefix_Header */

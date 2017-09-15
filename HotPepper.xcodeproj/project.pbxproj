@@ -1,0 +1,848 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC1017D61F5D1E7B0033E6C6 /* HPSearchSpecialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1017D51F5D1E7B0033E6C6 /* HPSearchSpecialViewController.m */; };
+		FC1017DE1F5D21760033E6C6 /* HPStoreDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1017DB1F5D21760033E6C6 /* HPStoreDetailViewController.m */; };
+		FC1017DF1F5D21760033E6C6 /* HPStoreDetailViewController+onButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1017DD1F5D21760033E6C6 /* HPStoreDetailViewController+onButton.m */; };
+		FC152DB61F5D5020004479FD /* HPSearchStoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC152DB51F5D5020004479FD /* HPSearchStoreViewController.m */; };
+		FC152DB91F5D50A9004479FD /* HPSearchAreaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC152DB81F5D50A9004479FD /* HPSearchAreaViewController.m */; };
+		FC152DBC1F5D5182004479FD /* HPSearchTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC152DBB1F5D5182004479FD /* HPSearchTopViewController.m */; };
+		FC2303DC1F53BF5D00933643 /* GTMGatherInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2303CD1F53BF5D00933643 /* GTMGatherInputStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FC2303DD1F53BF5D00933643 /* GTMHTTPFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2303CF1F53BF5D00933643 /* GTMHTTPFetcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FC2303DE1F53BF5D00933643 /* GTMHTTPFetcherLogging.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2303D11F53BF5D00933643 /* GTMHTTPFetcherLogging.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FC2303DF1F53BF5D00933643 /* GTMHTTPFetcherService.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2303D31F53BF5D00933643 /* GTMHTTPFetcherService.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FC2303E01F53BF5D00933643 /* GTMHTTPFetchHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2303D51F53BF5D00933643 /* GTMHTTPFetchHistory.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FC2303E11F53BF5D00933643 /* GTMHTTPUploadFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2303D71F53BF5D00933643 /* GTMHTTPUploadFetcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FC2303E21F53BF5D00933643 /* GTMMIMEDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2303D91F53BF5D00933643 /* GTMMIMEDocument.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FC2303E31F53BF5D00933643 /* GTMReadMonitorInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2303DB1F53BF5D00933643 /* GTMReadMonitorInputStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FC2303ED1F53C10A00933643 /* HPCoreDataUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2303E81F53C10A00933643 /* HPCoreDataUtility.m */; };
+		FC2303EE1F53C10A00933643 /* HPPropertyListUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2303EA1F53C10A00933643 /* HPPropertyListUtility.m */; };
+		FC2303EF1F53C10A00933643 /* HPUserDefaultsUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2303EC1F53C10A00933643 /* HPUserDefaultsUtility.m */; };
+		FC2304091F53C46800933643 /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2304081F53C46800933643 /* GDataXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FC23040B1F53C4B300933643 /* masterData.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC23040A1F53C4B300933643 /* masterData.plist */; };
+		FC23040E1F53C52E00933643 /* btn_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = FC23040C1F53C52E00933643 /* btn_bg.png */; };
+		FC23040F1F53C52E00933643 /* noImage.png in Resources */ = {isa = PBXBuildFile; fileRef = FC23040D1F53C52E00933643 /* noImage.png */; };
+		FC2304151F53C57B00933643 /* Bookmark.png in Resources */ = {isa = PBXBuildFile; fileRef = FC2304101F53C57B00933643 /* Bookmark.png */; };
+		FC2304161F53C57B00933643 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FC2304111F53C57B00933643 /* Icon.png */; };
+		FC2304171F53C57B00933643 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC2304121F53C57B00933643 /* Icon@2x.png */; };
+		FC2304181F53C57B00933643 /* Search.png in Resources */ = {isa = PBXBuildFile; fileRef = FC2304131F53C57B00933643 /* Search.png */; };
+		FC2304191F53C57B00933643 /* Setting.png in Resources */ = {isa = PBXBuildFile; fileRef = FC2304141F53C57B00933643 /* Setting.png */; };
+		FC23041C1F53C6ED00933643 /* HPAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC23041B1F53C6ED00933643 /* HPAboutViewController.m */; };
+		FC23041F1F53C79400933643 /* HPSettingTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC23041E1F53C79400933643 /* HPSettingTopViewController.m */; };
+		FC2304221F53C7C200933643 /* HPBookmarkTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2304211F53C7C200933643 /* HPBookmarkTopViewController.m */; };
+		FC2304281F53C9A500933643 /* HPAreaEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2304271F53C9A500933643 /* HPAreaEntity.m */; };
+		FC23042E1F53CB8900933643 /* HPStoreEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = FC23042D1F53CB8900933643 /* HPStoreEntity.m */; };
+		FC2304311F53CBC100933643 /* HPSpecialEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2304301F53CBC100933643 /* HPSpecialEntity.m */; };
+		FC2304341F53D8BC00933643 /* HotPepperCoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC2304321F53D8BC00933643 /* HotPepperCoreDataModel.xcdatamodeld */; };
+		FC591B481F53F461003A0062 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC591B471F53F461003A0062 /* CoreFoundation.framework */; };
+		FC60E4CC1F5CF3B3000392A5 /* HPBookmarkStoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FC60E4CB1F5CF3B3000392A5 /* HPBookmarkStoreCell.m */; };
+		FC60E4CF1F5CF44F000392A5 /* HPSearchStoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FC60E4CE1F5CF44F000392A5 /* HPSearchStoreCell.m */; };
+		FC60E4D21F5CF4A9000392A5 /* HPThumbnailProxyView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC60E4D11F5CF4A9000392A5 /* HPThumbnailProxyView.m */; };
+		FC60F6E31F58FDE0009C238B /* HPBookmarkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FC60F6E21F58FDE0009C238B /* HPBookmarkManager.m */; };
+		FC711C3C1F5053E50011ABFF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC711C3B1F5053E50011ABFF /* QuartzCore.framework */; };
+		FC711C3E1F5054060011ABFF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC711C3D1F5054060011ABFF /* CoreData.framework */; };
+		FC711C401F5054160011ABFF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC711C3F1F5054160011ABFF /* AVFoundation.framework */; };
+		FC711C421F50542A0011ABFF /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC711C411F50542A0011ABFF /* CoreMedia.framework */; };
+		FC711C441F5054390011ABFF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC711C431F5054390011ABFF /* UIKit.framework */; };
+		FC711C461F50544B0011ABFF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC711C451F50544B0011ABFF /* CoreGraphics.framework */; };
+		FC711C491F5054A60011ABFF /* SDSCrashReporter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC711C471F5054A60011ABFF /* SDSCrashReporter.framework */; };
+		FC711C4A1F5054A60011ABFF /* SDSNotifier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC711C481F5054A60011ABFF /* SDSNotifier.framework */; };
+		FC711C4C1F5055270011ABFF /* CrashReporter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC711C4B1F5055270011ABFF /* CrashReporter.framework */; };
+		FC714F1D1F53FC2F0044FF5E /* HPBookmarkedStoreEntity+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = FC714F1A1F53FC2F0044FF5E /* HPBookmarkedStoreEntity+CoreDataClass.m */; };
+		FC714F1E1F53FC2F0044FF5E /* HPBookmarkedStoreEntity+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = FC714F1C1F53FC2F0044FF5E /* HPBookmarkedStoreEntity+CoreDataProperties.m */; };
+		FC714F211F53FD360044FF5E /* HHFetcherBase.m in Sources */ = {isa = PBXBuildFile; fileRef = FC714F201F53FD360044FF5E /* HHFetcherBase.m */; };
+		FC714F271F5400C60044FF5E /* HPAreaFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = FC714F261F5400C60044FF5E /* HPAreaFetcher.m */; };
+		FC714F2A1F54036B0044FF5E /* HPSpecialFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = FC714F291F54036B0044FF5E /* HPSpecialFetcher.m */; };
+		FC714F2D1F540EAF0044FF5E /* HPStoreFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = FC714F2C1F540EAF0044FF5E /* HPStoreFetcher.m */; };
+		FC74F06E1F4FD14600193FAE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC74F06D1F4FD14600193FAE /* main.m */; };
+		FC74F0711F4FD14600193FAE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC74F0701F4FD14600193FAE /* AppDelegate.m */; };
+		FC74F07A1F4FD14600193FAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC74F0781F4FD14600193FAE /* Main.storyboard */; };
+		FC74F07C1F4FD14600193FAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC74F07B1F4FD14600193FAE /* Assets.xcassets */; };
+		FC74F07F1F4FD14600193FAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC74F07D1F4FD14600193FAE /* LaunchScreen.storyboard */; };
+		FC8E89D01F56764D00A04470 /* HPSettingTopViewController+onButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8E89CF1F56764D00A04470 /* HPSettingTopViewController+onButton.m */; };
+		FC8E89D31F56776100A04470 /* HHManagerBase.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8E89D21F56776100A04470 /* HHManagerBase.m */; };
+		FCDC030F1F505004006A2F60 /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FCDC030E1F505004006A2F60 /* libxml2.2.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FC1017D41F5D1E7B0033E6C6 /* HPSearchSpecialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HPSearchSpecialViewController.h; path = HotPepper/Controller/SearchSpecial/HPSearchSpecialViewController.h; sourceTree = "<group>"; };
+		FC1017D51F5D1E7B0033E6C6 /* HPSearchSpecialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HPSearchSpecialViewController.m; path = HotPepper/Controller/SearchSpecial/HPSearchSpecialViewController.m; sourceTree = "<group>"; };
+		FC1017DA1F5D21760033E6C6 /* HPStoreDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HPStoreDetailViewController.h; path = HotPepper/Controller/StoreDetail/HPStoreDetailViewController.h; sourceTree = "<group>"; };
+		FC1017DB1F5D21760033E6C6 /* HPStoreDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HPStoreDetailViewController.m; path = HotPepper/Controller/StoreDetail/HPStoreDetailViewController.m; sourceTree = "<group>"; };
+		FC1017DC1F5D21760033E6C6 /* HPStoreDetailViewController+onButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "HPStoreDetailViewController+onButton.h"; path = "HotPepper/Controller/StoreDetail/HPStoreDetailViewController+onButton.h"; sourceTree = "<group>"; };
+		FC1017DD1F5D21760033E6C6 /* HPStoreDetailViewController+onButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "HPStoreDetailViewController+onButton.m"; path = "HotPepper/Controller/StoreDetail/HPStoreDetailViewController+onButton.m"; sourceTree = "<group>"; };
+		FC152DB41F5D5020004479FD /* HPSearchStoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HPSearchStoreViewController.h; path = HotPepper/Controller/SearchStore/HPSearchStoreViewController.h; sourceTree = "<group>"; };
+		FC152DB51F5D5020004479FD /* HPSearchStoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HPSearchStoreViewController.m; path = HotPepper/Controller/SearchStore/HPSearchStoreViewController.m; sourceTree = "<group>"; };
+		FC152DB71F5D50A9004479FD /* HPSearchAreaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HPSearchAreaViewController.h; path = HotPepper/Controller/SearchArea/HPSearchAreaViewController.h; sourceTree = "<group>"; };
+		FC152DB81F5D50A9004479FD /* HPSearchAreaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HPSearchAreaViewController.m; path = HotPepper/Controller/SearchArea/HPSearchAreaViewController.m; sourceTree = "<group>"; };
+		FC152DBA1F5D5182004479FD /* HPSearchTopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HPSearchTopViewController.h; path = HotPepper/Controller/SearchTop/HPSearchTopViewController.h; sourceTree = "<group>"; };
+		FC152DBB1F5D5182004479FD /* HPSearchTopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HPSearchTopViewController.m; path = HotPepper/Controller/SearchTop/HPSearchTopViewController.m; sourceTree = "<group>"; };
+		FC2303CC1F53BF5D00933643 /* GTMGatherInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMGatherInputStream.h; path = Library/GTMHTTPFetcher/GTMGatherInputStream.h; sourceTree = "<group>"; };
+		FC2303CD1F53BF5D00933643 /* GTMGatherInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMGatherInputStream.m; path = Library/GTMHTTPFetcher/GTMGatherInputStream.m; sourceTree = "<group>"; };
+		FC2303CE1F53BF5D00933643 /* GTMHTTPFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMHTTPFetcher.h; path = Library/GTMHTTPFetcher/GTMHTTPFetcher.h; sourceTree = "<group>"; };
+		FC2303CF1F53BF5D00933643 /* GTMHTTPFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMHTTPFetcher.m; path = Library/GTMHTTPFetcher/GTMHTTPFetcher.m; sourceTree = "<group>"; };
+		FC2303D01F53BF5D00933643 /* GTMHTTPFetcherLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMHTTPFetcherLogging.h; path = Library/GTMHTTPFetcher/GTMHTTPFetcherLogging.h; sourceTree = "<group>"; };
+		FC2303D11F53BF5D00933643 /* GTMHTTPFetcherLogging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMHTTPFetcherLogging.m; path = Library/GTMHTTPFetcher/GTMHTTPFetcherLogging.m; sourceTree = "<group>"; };
+		FC2303D21F53BF5D00933643 /* GTMHTTPFetcherService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMHTTPFetcherService.h; path = Library/GTMHTTPFetcher/GTMHTTPFetcherService.h; sourceTree = "<group>"; };
+		FC2303D31F53BF5D00933643 /* GTMHTTPFetcherService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMHTTPFetcherService.m; path = Library/GTMHTTPFetcher/GTMHTTPFetcherService.m; sourceTree = "<group>"; };
+		FC2303D41F53BF5D00933643 /* GTMHTTPFetchHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMHTTPFetchHistory.h; path = Library/GTMHTTPFetcher/GTMHTTPFetchHistory.h; sourceTree = "<group>"; };
+		FC2303D51F53BF5D00933643 /* GTMHTTPFetchHistory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMHTTPFetchHistory.m; path = Library/GTMHTTPFetcher/GTMHTTPFetchHistory.m; sourceTree = "<group>"; };
+		FC2303D61F53BF5D00933643 /* GTMHTTPUploadFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMHTTPUploadFetcher.h; path = Library/GTMHTTPFetcher/GTMHTTPUploadFetcher.h; sourceTree = "<group>"; };
+		FC2303D71F53BF5D00933643 /* GTMHTTPUploadFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMHTTPUploadFetcher.m; path = Library/GTMHTTPFetcher/GTMHTTPUploadFetcher.m; sourceTree = "<group>"; };
+		FC2303D81F53BF5D00933643 /* GTMMIMEDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMMIMEDocument.h; path = Library/GTMHTTPFetcher/GTMMIMEDocument.h; sourceTree = "<group>"; };
+		FC2303D91F53BF5D00933643 /* GTMMIMEDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMMIMEDocument.m; path = Library/GTMHTTPFetcher/GTMMIMEDocument.m; sourceTree = "<group>"; };
+		FC2303DA1F53BF5D00933643 /* GTMReadMonitorInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMReadMonitorInputStream.h; path = Library/GTMHTTPFetcher/GTMReadMonitorInputStream.h; sourceTree = "<group>"; };
+		FC2303DB1F53BF5D00933643 /* GTMReadMonitorInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMReadMonitorInputStream.m; path = Library/GTMHTTPFetcher/GTMReadMonitorInputStream.m; sourceTree = "<group>"; };
+		FC2303E61F53C10A00933643 /* HHNSUserDefaultsProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HHNSUserDefaultsProtocol.h; path = Model/Utility/HHNSUserDefaultsProtocol.h; sourceTree = "<group>"; };
+		FC2303E71F53C10A00933643 /* HPCoreDataUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HPCoreDataUtility.h; path = Model/Utility/HPCoreDataUtility.h; sourceTree = "<group>"; };
+		FC2303E81F53C10A00933643 /* HPCoreDataUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HPCoreDataUtility.m; path = Model/Utility/HPCoreDataUtility.m; sourceTree = "<group>"; };
+		FC2303E91F53C10A00933643 /* HPPropertyListUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HPPropertyListUtility.h; path = Model/Utility/HPPropertyListUtility.h; sourceTree = "<group>"; };
+		FC2303EA1F53C10A00933643 /* HPPropertyListUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HPPropertyListUtility.m; path = Model/Utility/HPPropertyListUtility.m; sourceTree = "<group>"; };
+		FC2303EB1F53C10A00933643 /* HPUserDefaultsUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HPUserDefaultsUtility.h; path = Model/Utility/HPUserDefaultsUtility.h; sourceTree = "<group>"; };
+		FC2303EC1F53C10A00933643 /* HPUserDefaultsUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HPUserDefaultsUtility.m; path = Model/Utility/HPUserDefaultsUtility.m; sourceTree = "<group>"; };
+		FC2304071F53C46800933643 /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDataXMLNode.h; path = Library/GData/XMLSupport/GDataXMLNode.h; sourceTree = "<group>"; };
+		FC2304081F53C46800933643 /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GDataXMLNode.m; path = Library/GData/XMLSupport/GDataXMLNode.m; sourceTree = "<group>"; };
+		FC23040A1F53C4B300933643 /* masterData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = masterData.plist; path = Resources/master/plist/masterData.plist; sourceTree = "<group>"; };
+		FC23040C1F53C52E00933643 /* btn_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_bg.png; path = Resources/images/btn_bg.png; sourceTree = "<group>"; };
+		FC23040D1F53C52E00933643 /* noImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = noImage.png; path = Resources/images/noImage.png; sourceTree = "<group>"; };
+		FC2304101F53C57B00933643 /* Bookmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Bookmark.png; path = Resources/icon/Bookmark.png; sourceTree = "<group>"; };
+		FC2304111F53C57B00933643 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Resources/icon/Icon.png; sourceTree = "<group>"; };
+		FC2304121F53C57B00933643 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "Resources/icon/Icon@2x.png"; sourceTree = "<group>"; };
+		FC2304131F53C57B00933643 /* Search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Search.png; path = Resources/icon/Search.png; sourceTree = "<group>"; };
+		FC2304141F53C57B00933643 /* Setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Setting.png; path = Resources/icon/Setting.png; sourceTree = "<group>"; };
+		FC23041A1F53C6ED00933643 /* HPAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HPAboutViewController.h; path = HotPepper/Controller/About/HPAboutViewController.h; sourceTree = "<group>"; };
+		FC23041B1F53C6ED00933643 /* HPAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HPAboutViewController.m; path = HotPepper/Controller/About/HPAboutViewController.m; sourceTree = "<group>"; };
+		FC23041D1F53C79400933643 /* HPSettingTopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HPSettingTopViewController.h; path = HotPepper/Controller/SettingTop/HPSettingTopViewController.h; sourceTree = "<group>"; };
+		FC23041E1F53C79400933643 /* HPSettingTopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HPSettingTopViewController.m; path = HotPepper/Controller/SettingTop/HPSettingTopViewController.m; sourceTree = "<group>"; };
+		FC2304201F53C7C200933643 /* HPBookmarkTopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HPBookmarkTopViewController.h; path = HotPepper/Controller/BookmarkTop/HPBookmarkTopViewController.h; sourceTree = "<group>"; };
+		FC2304211F53C7C200933643 /* HPBookmarkTopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HPBookmarkTopViewController.m; path = HotPepper/Controller/BookmarkTop/HPBookmarkTopViewController.m; sourceTree = "<group>"; };
+		FC2304261F53C9A500933643 /* HPAreaEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HPAreaEntity.h; path = Model/Entity/HPAreaEntity.h; sourceTree = "<group>"; };
+		FC2304271F53C9A500933643 /* HPAreaEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HPAreaEntity.m; path = Model/Entity/HPAreaEntity.m; sourceTree = "<group>"; };
+		FC23042C1F53CB8900933643 /* HPStoreEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HPStoreEntity.h; path = Model/Entity/HPStoreEntity.h; sourceTree = "<group>"; };
+		FC23042D1F53CB8900933643 /* HPStoreEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HPStoreEntity.m; path = Model/Entity/HPStoreEntity.m; sourceTree = "<group>"; };
+		FC23042F1F53CBC100933643 /* HPSpecialEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HPSpecialEntity.h; path = Model/Entity/HPSpecialEntity.h; sourceTree = "<group>"; };
+		FC2304301F53CBC100933643 /* HPSpecialEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HPSpecialEntity.m; path = Model/Entity/HPSpecialEntity.m; sourceTree = "<group>"; };
+		FC2304331F53D8BC00933643 /* HotPepperCoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HotPepperCoreDataModel.xcdatamodel; sourceTree = "<group>"; };
+		FC591B471F53F461003A0062 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		FC60E4CA1F5CF3B3000392A5 /* HPBookmarkStoreCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HPBookmarkStoreCell.h; path = View/HPBookmarkStoreCell.h; sourceTree = "<group>"; };
+		FC60E4CB1F5CF3B3000392A5 /* HPBookmarkStoreCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HPBookmarkStoreCell.m; path = View/HPBookmarkStoreCell.m; sourceTree = "<group>"; };
+		FC60E4CD1F5CF44F000392A5 /* HPSearchStoreCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HPSearchStoreCell.h; path = View/HPSearchStoreCell.h; sourceTree = "<group>"; };
+		FC60E4CE1F5CF44F000392A5 /* HPSearchStoreCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HPSearchStoreCell.m; path = View/HPSearchStoreCell.m; sourceTree = "<group>"; };
+		FC60E4D01F5CF4A9000392A5 /* HPThumbnailProxyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HPThumbnailProxyView.h; path = View/HPThumbnailProxyView.h; sourceTree = "<group>"; };
+		FC60E4D11F5CF4A9000392A5 /* HPThumbnailProxyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HPThumbnailProxyView.m; path = View/HPThumbnailProxyView.m; sourceTree = "<group>"; };
+		FC60F6E11F58FDE0009C238B /* HPBookmarkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HPBookmarkManager.h; path = Model/Manager/HPBookmarkManager.h; sourceTree = "<group>"; };
+		FC60F6E21F58FDE0009C238B /* HPBookmarkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HPBookmarkManager.m; path = Model/Manager/HPBookmarkManager.m; sourceTree = "<group>"; };
+		FC711C3B1F5053E50011ABFF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FC711C3D1F5054060011ABFF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FC711C3F1F5054160011ABFF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		FC711C411F50542A0011ABFF /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		FC711C431F5054390011ABFF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FC711C451F50544B0011ABFF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FC711C471F5054A60011ABFF /* SDSCrashReporter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDSCrashReporter.framework; path = HotPepper/SDSCrashReporter.framework; sourceTree = "<group>"; };
+		FC711C481F5054A60011ABFF /* SDSNotifier.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDSNotifier.framework; path = HotPepper/SDSNotifier.framework; sourceTree = "<group>"; };
+		FC711C4B1F5055270011ABFF /* CrashReporter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CrashReporter.framework; path = HotPepper/CrashReporter.framework; sourceTree = "<group>"; };
+		FC714F191F53FC2F0044FF5E /* HPBookmarkedStoreEntity+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "HPBookmarkedStoreEntity+CoreDataClass.h"; path = "Model/Entity/HPBookmarkedStoreEntity+CoreDataClass.h"; sourceTree = "<group>"; };
+		FC714F1A1F53FC2F0044FF5E /* HPBookmarkedStoreEntity+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "HPBookmarkedStoreEntity+CoreDataClass.m"; path = "Model/Entity/HPBookmarkedStoreEntity+CoreDataClass.m"; sourceTree = "<group>"; };
+		FC714F1B1F53FC2F0044FF5E /* HPBookmarkedStoreEntity+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "HPBookmarkedStoreEntity+CoreDataProperties.h"; path = "Model/Entity/HPBookmarkedStoreEntity+CoreDataProperties.h"; sourceTree = "<group>"; };
+		FC714F1C1F53FC2F0044FF5E /* HPBookmarkedStoreEntity+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "HPBookmarkedStoreEntity+CoreDataProperties.m"; path = "Model/Entity/HPBookmarkedStoreEntity+CoreDataProperties.m"; sourceTree = "<group>"; };
+		FC714F1F1F53FD360044FF5E /* HHFetcherBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HHFetcherBase.h; path = Model/Fetcher/HHFetcherBase.h; sourceTree = "<group>"; };
+		FC714F201F53FD360044FF5E /* HHFetcherBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HHFetcherBase.m; path = Model/Fetcher/HHFetcherBase.m; sourceTree = "<group>"; };
+		FC714F251F5400C60044FF5E /* HPAreaFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HPAreaFetcher.h; path = Model/Fetcher/HPAreaFetcher.h; sourceTree = "<group>"; };
+		FC714F261F5400C60044FF5E /* HPAreaFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HPAreaFetcher.m; path = Model/Fetcher/HPAreaFetcher.m; sourceTree = "<group>"; };
+		FC714F281F54036B0044FF5E /* HPSpecialFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HPSpecialFetcher.h; path = Model/Fetcher/HPSpecialFetcher.h; sourceTree = "<group>"; };
+		FC714F291F54036B0044FF5E /* HPSpecialFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HPSpecialFetcher.m; path = Model/Fetcher/HPSpecialFetcher.m; sourceTree = "<group>"; };
+		FC714F2B1F540EAF0044FF5E /* HPStoreFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HPStoreFetcher.h; path = Model/Fetcher/HPStoreFetcher.h; sourceTree = "<group>"; };
+		FC714F2C1F540EAF0044FF5E /* HPStoreFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HPStoreFetcher.m; path = Model/Fetcher/HPStoreFetcher.m; sourceTree = "<group>"; };
+		FC74F0691F4FD14600193FAE /* HotPepper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotPepper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC74F06D1F4FD14600193FAE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FC74F06F1F4FD14600193FAE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FC74F0701F4FD14600193FAE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FC74F0791F4FD14600193FAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FC74F07B1F4FD14600193FAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC74F07E1F4FD14600193FAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FC74F0801F4FD14600193FAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC8E89CE1F56764D00A04470 /* HPSettingTopViewController+onButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "HPSettingTopViewController+onButton.h"; path = "HotPepper/Controller/SettingTop/HPSettingTopViewController+onButton.h"; sourceTree = "<group>"; };
+		FC8E89CF1F56764D00A04470 /* HPSettingTopViewController+onButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "HPSettingTopViewController+onButton.m"; path = "HotPepper/Controller/SettingTop/HPSettingTopViewController+onButton.m"; sourceTree = "<group>"; };
+		FC8E89D11F56776100A04470 /* HHManagerBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HHManagerBase.h; path = Model/Manager/HHManagerBase.h; sourceTree = "<group>"; };
+		FC8E89D21F56776100A04470 /* HHManagerBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HHManagerBase.m; path = Model/Manager/HHManagerBase.m; sourceTree = "<group>"; };
+		FCDC030C1F504A96006A2F60 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		FCDC030E1F505004006A2F60 /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC74F0661F4FD14600193FAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC591B481F53F461003A0062 /* CoreFoundation.framework in Frameworks */,
+				FC711C4C1F5055270011ABFF /* CrashReporter.framework in Frameworks */,
+				FC711C491F5054A60011ABFF /* SDSCrashReporter.framework in Frameworks */,
+				FC711C4A1F5054A60011ABFF /* SDSNotifier.framework in Frameworks */,
+				FC711C461F50544B0011ABFF /* CoreGraphics.framework in Frameworks */,
+				FC711C441F5054390011ABFF /* UIKit.framework in Frameworks */,
+				FC711C421F50542A0011ABFF /* CoreMedia.framework in Frameworks */,
+				FC711C401F5054160011ABFF /* AVFoundation.framework in Frameworks */,
+				FC711C3E1F5054060011ABFF /* CoreData.framework in Frameworks */,
+				FC711C3C1F5053E50011ABFF /* QuartzCore.framework in Frameworks */,
+				FCDC030F1F505004006A2F60 /* libxml2.2.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC1925D61F4FFE7100953FD4 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				FC23041A1F53C6ED00933643 /* HPAboutViewController.h */,
+				FC23041B1F53C6ED00933643 /* HPAboutViewController.m */,
+			);
+			name = About;
+			sourceTree = "<group>";
+		};
+		FC1925DC1F50168500953FD4 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				FC23040C1F53C52E00933643 /* btn_bg.png */,
+				FC23040D1F53C52E00933643 /* noImage.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		FC60E4D31F5CFFC8000392A5 /* StoreDetail */ = {
+			isa = PBXGroup;
+			children = (
+				FC1017DA1F5D21760033E6C6 /* HPStoreDetailViewController.h */,
+				FC1017DB1F5D21760033E6C6 /* HPStoreDetailViewController.m */,
+				FC1017DC1F5D21760033E6C6 /* HPStoreDetailViewController+onButton.h */,
+				FC1017DD1F5D21760033E6C6 /* HPStoreDetailViewController+onButton.m */,
+			);
+			name = StoreDetail;
+			sourceTree = "<group>";
+		};
+		FC74F0601F4FD14600193FAE = {
+			isa = PBXGroup;
+			children = (
+				FC74F06B1F4FD14600193FAE /* HotPepper */,
+				FC74F06A1F4FD14600193FAE /* Products */,
+				FCDC030D1F505004006A2F60 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FC74F06A1F4FD14600193FAE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC74F0691F4FD14600193FAE /* HotPepper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC74F06B1F4FD14600193FAE /* HotPepper */ = {
+			isa = PBXGroup;
+			children = (
+				FC74F0A91F4FDE2600193FAE /* Library */,
+				FC74F0A81F4FDE2000193FAE /* Model */,
+				FC74F0A21F4FDCE400193FAE /* View */,
+				FC74F09C1F4FDC3100193FAE /* Controller */,
+				FC74F0861F4FD4EA00193FAE /* Resources */,
+				FC74F06F1F4FD14600193FAE /* AppDelegate.h */,
+				FC74F0701F4FD14600193FAE /* AppDelegate.m */,
+				FC74F0781F4FD14600193FAE /* Main.storyboard */,
+				FC74F07B1F4FD14600193FAE /* Assets.xcassets */,
+				FC74F07D1F4FD14600193FAE /* LaunchScreen.storyboard */,
+				FC74F0801F4FD14600193FAE /* Info.plist */,
+				FC74F06C1F4FD14600193FAE /* Supporting Files */,
+			);
+			path = HotPepper;
+			sourceTree = "<group>";
+		};
+		FC74F06C1F4FD14600193FAE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC74F06D1F4FD14600193FAE /* main.m */,
+				FCDC030C1F504A96006A2F60 /* PrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FC74F0861F4FD4EA00193FAE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FCDC02FA1F5042AE006A2F60 /* master */,
+				FC1925DC1F50168500953FD4 /* images */,
+				FC74F0871F4FD50B00193FAE /* icon */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		FC74F0871F4FD50B00193FAE /* icon */ = {
+			isa = PBXGroup;
+			children = (
+				FC2304101F53C57B00933643 /* Bookmark.png */,
+				FC2304111F53C57B00933643 /* Icon.png */,
+				FC2304121F53C57B00933643 /* Icon@2x.png */,
+				FC2304131F53C57B00933643 /* Search.png */,
+				FC2304141F53C57B00933643 /* Setting.png */,
+			);
+			name = icon;
+			sourceTree = "<group>";
+		};
+		FC74F09C1F4FDC3100193FAE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FC60E4D31F5CFFC8000392A5 /* StoreDetail */,
+				FC1925D61F4FFE7100953FD4 /* About */,
+				FC74F0A41F4FDD7F00193FAE /* SettingTop */,
+				FC74F0A31F4FDD7500193FAE /* BookmarkTop */,
+				FC74F0A01F4FDCB600193FAE /* SearchSpecial */,
+				FC74F09F1F4FDC9F00193FAE /* SearchStore */,
+				FC74F09E1F4FDC7B00193FAE /* SearchArea */,
+				FC74F09D1F4FDC3F00193FAE /* SearchTop */,
+			);
+			name = Controller;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		FC74F09D1F4FDC3F00193FAE /* SearchTop */ = {
+			isa = PBXGroup;
+			children = (
+				FC152DBA1F5D5182004479FD /* HPSearchTopViewController.h */,
+				FC152DBB1F5D5182004479FD /* HPSearchTopViewController.m */,
+			);
+			name = SearchTop;
+			sourceTree = "<group>";
+		};
+		FC74F09E1F4FDC7B00193FAE /* SearchArea */ = {
+			isa = PBXGroup;
+			children = (
+				FC152DB71F5D50A9004479FD /* HPSearchAreaViewController.h */,
+				FC152DB81F5D50A9004479FD /* HPSearchAreaViewController.m */,
+			);
+			name = SearchArea;
+			sourceTree = "<group>";
+		};
+		FC74F09F1F4FDC9F00193FAE /* SearchStore */ = {
+			isa = PBXGroup;
+			children = (
+				FC152DB41F5D5020004479FD /* HPSearchStoreViewController.h */,
+				FC152DB51F5D5020004479FD /* HPSearchStoreViewController.m */,
+			);
+			name = SearchStore;
+			sourceTree = "<group>";
+		};
+		FC74F0A01F4FDCB600193FAE /* SearchSpecial */ = {
+			isa = PBXGroup;
+			children = (
+				FC1017D41F5D1E7B0033E6C6 /* HPSearchSpecialViewController.h */,
+				FC1017D51F5D1E7B0033E6C6 /* HPSearchSpecialViewController.m */,
+			);
+			name = SearchSpecial;
+			sourceTree = "<group>";
+		};
+		FC74F0A21F4FDCE400193FAE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC60E4CA1F5CF3B3000392A5 /* HPBookmarkStoreCell.h */,
+				FC60E4CB1F5CF3B3000392A5 /* HPBookmarkStoreCell.m */,
+				FC60E4CD1F5CF44F000392A5 /* HPSearchStoreCell.h */,
+				FC60E4CE1F5CF44F000392A5 /* HPSearchStoreCell.m */,
+				FC60E4D01F5CF4A9000392A5 /* HPThumbnailProxyView.h */,
+				FC60E4D11F5CF4A9000392A5 /* HPThumbnailProxyView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		FC74F0A31F4FDD7500193FAE /* BookmarkTop */ = {
+			isa = PBXGroup;
+			children = (
+				FC2304201F53C7C200933643 /* HPBookmarkTopViewController.h */,
+				FC2304211F53C7C200933643 /* HPBookmarkTopViewController.m */,
+			);
+			name = BookmarkTop;
+			sourceTree = "<group>";
+		};
+		FC74F0A41F4FDD7F00193FAE /* SettingTop */ = {
+			isa = PBXGroup;
+			children = (
+				FC23041D1F53C79400933643 /* HPSettingTopViewController.h */,
+				FC23041E1F53C79400933643 /* HPSettingTopViewController.m */,
+				FC8E89CE1F56764D00A04470 /* HPSettingTopViewController+onButton.h */,
+				FC8E89CF1F56764D00A04470 /* HPSettingTopViewController+onButton.m */,
+			);
+			name = SettingTop;
+			sourceTree = "<group>";
+		};
+		FC74F0A81F4FDE2000193FAE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FCDC03011F50456F006A2F60 /* Fetcher */,
+				FCDC03001F50456B006A2F60 /* Manager */,
+				FCDC02FF1F504564006A2F60 /* Entity */,
+				FCDC02FE1F50454B006A2F60 /* Utility */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		FC74F0A91F4FDE2600193FAE /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				FCDC02DE1F5041DC006A2F60 /* GTMHTTPFetcher */,
+				FCDC02DB1F5041A9006A2F60 /* GData */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		FCDC02DB1F5041A9006A2F60 /* GData */ = {
+			isa = PBXGroup;
+			children = (
+				FCDC02DC1F5041C2006A2F60 /* XMLSupport */,
+			);
+			name = GData;
+			sourceTree = "<group>";
+		};
+		FCDC02DC1F5041C2006A2F60 /* XMLSupport */ = {
+			isa = PBXGroup;
+			children = (
+				FC2304071F53C46800933643 /* GDataXMLNode.h */,
+				FC2304081F53C46800933643 /* GDataXMLNode.m */,
+			);
+			name = XMLSupport;
+			sourceTree = "<group>";
+		};
+		FCDC02DE1F5041DC006A2F60 /* GTMHTTPFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				FC2303CC1F53BF5D00933643 /* GTMGatherInputStream.h */,
+				FC2303CD1F53BF5D00933643 /* GTMGatherInputStream.m */,
+				FC2303CE1F53BF5D00933643 /* GTMHTTPFetcher.h */,
+				FC2303CF1F53BF5D00933643 /* GTMHTTPFetcher.m */,
+				FC2303D01F53BF5D00933643 /* GTMHTTPFetcherLogging.h */,
+				FC2303D11F53BF5D00933643 /* GTMHTTPFetcherLogging.m */,
+				FC2303D21F53BF5D00933643 /* GTMHTTPFetcherService.h */,
+				FC2303D31F53BF5D00933643 /* GTMHTTPFetcherService.m */,
+				FC2303D41F53BF5D00933643 /* GTMHTTPFetchHistory.h */,
+				FC2303D51F53BF5D00933643 /* GTMHTTPFetchHistory.m */,
+				FC2303D61F53BF5D00933643 /* GTMHTTPUploadFetcher.h */,
+				FC2303D71F53BF5D00933643 /* GTMHTTPUploadFetcher.m */,
+				FC2303D81F53BF5D00933643 /* GTMMIMEDocument.h */,
+				FC2303D91F53BF5D00933643 /* GTMMIMEDocument.m */,
+				FC2303DA1F53BF5D00933643 /* GTMReadMonitorInputStream.h */,
+				FC2303DB1F53BF5D00933643 /* GTMReadMonitorInputStream.m */,
+			);
+			name = GTMHTTPFetcher;
+			sourceTree = "<group>";
+		};
+		FCDC02FA1F5042AE006A2F60 /* master */ = {
+			isa = PBXGroup;
+			children = (
+				FCDC02FB1F5042B4006A2F60 /* plist */,
+			);
+			name = master;
+			sourceTree = "<group>";
+		};
+		FCDC02FB1F5042B4006A2F60 /* plist */ = {
+			isa = PBXGroup;
+			children = (
+				FC23040A1F53C4B300933643 /* masterData.plist */,
+			);
+			name = plist;
+			sourceTree = "<group>";
+		};
+		FCDC02FE1F50454B006A2F60 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				FC2303E61F53C10A00933643 /* HHNSUserDefaultsProtocol.h */,
+				FC2303E71F53C10A00933643 /* HPCoreDataUtility.h */,
+				FC2303E81F53C10A00933643 /* HPCoreDataUtility.m */,
+				FC2303E91F53C10A00933643 /* HPPropertyListUtility.h */,
+				FC2303EA1F53C10A00933643 /* HPPropertyListUtility.m */,
+				FC2303EB1F53C10A00933643 /* HPUserDefaultsUtility.h */,
+				FC2303EC1F53C10A00933643 /* HPUserDefaultsUtility.m */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		FCDC02FF1F504564006A2F60 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				FC714F191F53FC2F0044FF5E /* HPBookmarkedStoreEntity+CoreDataClass.h */,
+				FC714F1A1F53FC2F0044FF5E /* HPBookmarkedStoreEntity+CoreDataClass.m */,
+				FC714F1B1F53FC2F0044FF5E /* HPBookmarkedStoreEntity+CoreDataProperties.h */,
+				FC714F1C1F53FC2F0044FF5E /* HPBookmarkedStoreEntity+CoreDataProperties.m */,
+				FC23042F1F53CBC100933643 /* HPSpecialEntity.h */,
+				FC2304301F53CBC100933643 /* HPSpecialEntity.m */,
+				FC2304261F53C9A500933643 /* HPAreaEntity.h */,
+				FC2304271F53C9A500933643 /* HPAreaEntity.m */,
+				FC23042C1F53CB8900933643 /* HPStoreEntity.h */,
+				FC23042D1F53CB8900933643 /* HPStoreEntity.m */,
+				FC2304321F53D8BC00933643 /* HotPepperCoreDataModel.xcdatamodeld */,
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
+		FCDC03001F50456B006A2F60 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				FC60F6E11F58FDE0009C238B /* HPBookmarkManager.h */,
+				FC60F6E21F58FDE0009C238B /* HPBookmarkManager.m */,
+				FC8E89D11F56776100A04470 /* HHManagerBase.h */,
+				FC8E89D21F56776100A04470 /* HHManagerBase.m */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		FCDC03011F50456F006A2F60 /* Fetcher */ = {
+			isa = PBXGroup;
+			children = (
+				FC714F1F1F53FD360044FF5E /* HHFetcherBase.h */,
+				FC714F201F53FD360044FF5E /* HHFetcherBase.m */,
+				FC714F251F5400C60044FF5E /* HPAreaFetcher.h */,
+				FC714F261F5400C60044FF5E /* HPAreaFetcher.m */,
+				FC714F281F54036B0044FF5E /* HPSpecialFetcher.h */,
+				FC714F291F54036B0044FF5E /* HPSpecialFetcher.m */,
+				FC714F2B1F540EAF0044FF5E /* HPStoreFetcher.h */,
+				FC714F2C1F540EAF0044FF5E /* HPStoreFetcher.m */,
+			);
+			name = Fetcher;
+			sourceTree = "<group>";
+		};
+		FCDC030D1F505004006A2F60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC591B471F53F461003A0062 /* CoreFoundation.framework */,
+				FC711C4B1F5055270011ABFF /* CrashReporter.framework */,
+				FC711C471F5054A60011ABFF /* SDSCrashReporter.framework */,
+				FC711C481F5054A60011ABFF /* SDSNotifier.framework */,
+				FC711C451F50544B0011ABFF /* CoreGraphics.framework */,
+				FC711C431F5054390011ABFF /* UIKit.framework */,
+				FC711C411F50542A0011ABFF /* CoreMedia.framework */,
+				FC711C3F1F5054160011ABFF /* AVFoundation.framework */,
+				FC711C3D1F5054060011ABFF /* CoreData.framework */,
+				FC711C3B1F5053E50011ABFF /* QuartzCore.framework */,
+				FCDC030E1F505004006A2F60 /* libxml2.2.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC74F0681F4FD14600193FAE /* HotPepper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC74F0831F4FD14600193FAE /* Build configuration list for PBXNativeTarget "HotPepper" */;
+			buildPhases = (
+				FC74F0651F4FD14600193FAE /* Sources */,
+				FC74F0661F4FD14600193FAE /* Frameworks */,
+				FC74F0671F4FD14600193FAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HotPepper;
+			productName = HotPepper;
+			productReference = FC74F0691F4FD14600193FAE /* HotPepper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC74F0611F4FD14600193FAE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Hiền Hoà Co.,LTD";
+				TargetAttributes = {
+					FC74F0681F4FD14600193FAE = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 6SG85WN8G5;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FC74F0641F4FD14600193FAE /* Build configuration list for PBXProject "HotPepper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC74F0601F4FD14600193FAE;
+			productRefGroup = FC74F06A1F4FD14600193FAE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC74F0681F4FD14600193FAE /* HotPepper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC74F0671F4FD14600193FAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC2304191F53C57B00933643 /* Setting.png in Resources */,
+				FC74F07F1F4FD14600193FAE /* LaunchScreen.storyboard in Resources */,
+				FC2304171F53C57B00933643 /* Icon@2x.png in Resources */,
+				FC23040E1F53C52E00933643 /* btn_bg.png in Resources */,
+				FC2304181F53C57B00933643 /* Search.png in Resources */,
+				FC74F07C1F4FD14600193FAE /* Assets.xcassets in Resources */,
+				FC23040F1F53C52E00933643 /* noImage.png in Resources */,
+				FC2304161F53C57B00933643 /* Icon.png in Resources */,
+				FC2304151F53C57B00933643 /* Bookmark.png in Resources */,
+				FC23040B1F53C4B300933643 /* masterData.plist in Resources */,
+				FC74F07A1F4FD14600193FAE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC74F0651F4FD14600193FAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC2303DD1F53BF5D00933643 /* GTMHTTPFetcher.m in Sources */,
+				FC152DBC1F5D5182004479FD /* HPSearchTopViewController.m in Sources */,
+				FC23041F1F53C79400933643 /* HPSettingTopViewController.m in Sources */,
+				FC1017DF1F5D21760033E6C6 /* HPStoreDetailViewController+onButton.m in Sources */,
+				FC8E89D01F56764D00A04470 /* HPSettingTopViewController+onButton.m in Sources */,
+				FC23041C1F53C6ED00933643 /* HPAboutViewController.m in Sources */,
+				FC2303EF1F53C10A00933643 /* HPUserDefaultsUtility.m in Sources */,
+				FC714F271F5400C60044FF5E /* HPAreaFetcher.m in Sources */,
+				FC2303EE1F53C10A00933643 /* HPPropertyListUtility.m in Sources */,
+				FC74F0711F4FD14600193FAE /* AppDelegate.m in Sources */,
+				FC2304281F53C9A500933643 /* HPAreaEntity.m in Sources */,
+				FC2304091F53C46800933643 /* GDataXMLNode.m in Sources */,
+				FC60E4CF1F5CF44F000392A5 /* HPSearchStoreCell.m in Sources */,
+				FC714F211F53FD360044FF5E /* HHFetcherBase.m in Sources */,
+				FC60E4CC1F5CF3B3000392A5 /* HPBookmarkStoreCell.m in Sources */,
+				FC2303E01F53BF5D00933643 /* GTMHTTPFetchHistory.m in Sources */,
+				FC2303DF1F53BF5D00933643 /* GTMHTTPFetcherService.m in Sources */,
+				FC2303DC1F53BF5D00933643 /* GTMGatherInputStream.m in Sources */,
+				FC1017DE1F5D21760033E6C6 /* HPStoreDetailViewController.m in Sources */,
+				FC714F2D1F540EAF0044FF5E /* HPStoreFetcher.m in Sources */,
+				FC714F1E1F53FC2F0044FF5E /* HPBookmarkedStoreEntity+CoreDataProperties.m in Sources */,
+				FC8E89D31F56776100A04470 /* HHManagerBase.m in Sources */,
+				FC60F6E31F58FDE0009C238B /* HPBookmarkManager.m in Sources */,
+				FC23042E1F53CB8900933643 /* HPStoreEntity.m in Sources */,
+				FC2303E21F53BF5D00933643 /* GTMMIMEDocument.m in Sources */,
+				FC2304311F53CBC100933643 /* HPSpecialEntity.m in Sources */,
+				FC2304221F53C7C200933643 /* HPBookmarkTopViewController.m in Sources */,
+				FC714F1D1F53FC2F0044FF5E /* HPBookmarkedStoreEntity+CoreDataClass.m in Sources */,
+				FC714F2A1F54036B0044FF5E /* HPSpecialFetcher.m in Sources */,
+				FC152DB91F5D50A9004479FD /* HPSearchAreaViewController.m in Sources */,
+				FC74F06E1F4FD14600193FAE /* main.m in Sources */,
+				FC2303E31F53BF5D00933643 /* GTMReadMonitorInputStream.m in Sources */,
+				FC2304341F53D8BC00933643 /* HotPepperCoreDataModel.xcdatamodeld in Sources */,
+				FC2303ED1F53C10A00933643 /* HPCoreDataUtility.m in Sources */,
+				FC152DB61F5D5020004479FD /* HPSearchStoreViewController.m in Sources */,
+				FC2303DE1F53BF5D00933643 /* GTMHTTPFetcherLogging.m in Sources */,
+				FC60E4D21F5CF4A9000392A5 /* HPThumbnailProxyView.m in Sources */,
+				FC1017D61F5D1E7B0033E6C6 /* HPSearchSpecialViewController.m in Sources */,
+				FC2303E11F53BF5D00933643 /* GTMHTTPUploadFetcher.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FC74F0781F4FD14600193FAE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC74F0791F4FD14600193FAE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FC74F07D1F4FD14600193FAE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC74F07E1F4FD14600193FAE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FC74F0811F4FD14600193FAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FC74F0821F4FD14600193FAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC74F0841F4FD14600193FAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6SG85WN8G5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HotPepper",
+				);
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
+				Header_Search_Paths = "$(SDKROOT)/usr/include/libxml2";
+				INFOPLIST_FILE = HotPepper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.HotPepper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				Prefix_Header = HotPepper/PrefixHeader.pch;
+			};
+			name = Debug;
+		};
+		FC74F0851F4FD14600193FAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6SG85WN8G5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HotPepper",
+				);
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
+				Header_Search_Paths = "$(SDKROOT)/usr/include/libxml2";
+				INFOPLIST_FILE = HotPepper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.HotPepper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				Prefix_Header = HotPepper/PrefixHeader.pch;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC74F0641F4FD14600193FAE /* Build configuration list for PBXProject "HotPepper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC74F0811F4FD14600193FAE /* Debug */,
+				FC74F0821F4FD14600193FAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC74F0831F4FD14600193FAE /* Build configuration list for PBXNativeTarget "HotPepper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC74F0841F4FD14600193FAE /* Debug */,
+				FC74F0851F4FD14600193FAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FC2304321F53D8BC00933643 /* HotPepperCoreDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FC2304331F53D8BC00933643 /* HotPepperCoreDataModel.xcdatamodel */,
+			);
+			currentVersion = FC2304331F53D8BC00933643 /* HotPepperCoreDataModel.xcdatamodel */;
+			path = HotPepperCoreDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FC74F0611F4FD14600193FAE /* Project object */;
+}
